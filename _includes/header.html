@@ -1,0 +1,28 @@
+<!--Header-->
+<header id="header">
+	<span class="image">
+		<a href="/">
+			<img src="assets/images/header.png" alt="" />
+		</a>
+	</span>
+	<nav>
+		<ul>
+			<li><a href="#menu">Menu</a></li>
+		</ul>
+	</nav>
+</header>
+
+<!--Menu-->
+<nav id="menu">
+	<ul class="links">
+
+		{% for item in site.data.nav %}
+			<li><a href="{{ item.link }}" {% if page.url == item.link %}style="color: #7bd2ed;"{% endif %}>
+				{{ item.name }}
+			</a></li>
+		{% endfor %}
+
+	</ul>
+</nav>
+
+

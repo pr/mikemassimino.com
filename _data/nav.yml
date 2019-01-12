@@ -1,0 +1,15 @@
+- name : Home
+  link : /
+- name : About
+  link : /about
+- name : Contact
+  link : https://mikemassimino.paperform.co/
+#- name : Media
+#  link : /media
+#- name : Speaker
+#  link : /speaker
+#- name : Book
+#  link : /book
+#- name : From Space
+#  link : /from-space
+
