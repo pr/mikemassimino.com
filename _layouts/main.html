@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <title>Mike Massimino - {{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
     {% seo %}
-    <link rel="icon" href="assets/images/favicon.png" sizes="32x32"/>
+    <link rel="icon" href="/assets/images/favicon.png" sizes="32x32"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118659453-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118659453-1');
+    </script>
 </head>
 
 <body class="is-preload">
