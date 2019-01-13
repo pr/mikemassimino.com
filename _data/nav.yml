@@ -4,8 +4,8 @@
   link : /about
 - name : Contact
   link : https://mikemassimino.paperform.co/
-#- name : Media
-#  link : /media
+- name : Media
+  link : /media
 #- name : Speaker
 #  link : /speaker
 #- name : Book

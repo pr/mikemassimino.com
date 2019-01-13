@@ -4,9 +4,7 @@
 		<header>
 			<h3>
 				{% for item in site.data.nav %}
-					<a href="{{ item.link }}" {% if page.url == item.link %}style="color: #7bd2ed;"{% endif %}>
-						{{item.name}}
-					</a>
+					<a href="{{ item.link }}" {% if page.url == item.link %}style="color: #7bd2ed;"{% endif %}>{{item.name}}</a>
 					{% if forloop.last == false %}
 					//
 					{% endif %}
@@ -24,5 +22,5 @@
 			</section>
 		</div>
 	</div>
-	<p class="copyright">&copy; Astro Mike Media, LLC | All Rights Reserved | <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-use">Terms of Use</a></p>
+	<p class="copyright">&copy; Astro Mike Media, LLC | All Rights Reserved | <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-use">Terms of Use</a> | <a href="/about-this-site">About This Site</a></p>
 </footer>
