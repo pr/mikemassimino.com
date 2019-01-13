@@ -1,0 +1,86 @@
+---
+
+layout: majorHeader
+permalink: /speaker
+title: Speaker
+
+---
+
+<div class="row">
+    <div class="col-6 col-12-small">
+        <h3>Introduction</h3>
+        <p>Mike shares with audiences personal stories of inspiration, innovation,
+            teamwork and leadership as drawn from his experiences in one of the
+            greatest and most dangerous jobs someone can have—NASA astronaut.
+            Through humor and storytelling, he highlights the pursuit and achievement
+            of a childhood dream, the dedication and teamwork necessary to train for
+            one of NASA’s most difficult space missions, the determination needed
+            to face tragedies like the Columbia space shuttle accident, and
+            the innovation and leadership necessary to overcome seemingly
+            insurmountable trials when in space and beyond. He leaves his
+            audiences understanding the value of having passion for what you do,
+            of perseverance in achieving a goal, of building a team to meet great
+            challenges, and of creativity and innovation in problem solving. He
+            also inspires audiences with the awe and beauty of space and shares
+            his thoughts on the future—both personal and in regard to the ever-changing
+            and competitive space program.</p>
+
+        <h3>Topics</h3>
+        <p>Achievement, Courage, Crisis Management,
+            Disaster Preparedness, Innovation, Inspiring Lives,
+            Leadership, Motivation, Overcoming Obstacles and Challenges,
+            Personal Growth, Risk Management, Science, Teamwork</p>
+
+        <h3>Past Clients</h3>
+        <p>Sunovion Pharmaceuticals Inc, CVS Caremark, Devicor Medical Products,
+            Southwest Power Pool, Independent Financial Group, National Council of
+            Examiners for Engineering and Surveying, Gartner, Inc, Dematic, Envision
+            Career & Leadership Programs, Northwestern Mutual, Allscripts Healthcare
+            Systems, Pratt & Whitney, Clark Planetarium, Pfizer, Healthcare Business
+            Media, Anthony’s Coal Fired Pizza, McCann Health, Glastonberry Music Festival,
+            WinTrust, Trader Joe’s, Dell, Sudler & Hennessey, Jabra, Oracle, Tony LaRussa
+            Leaders and Legends</p>
+    </div>
+    <div class="col-6 col-12-small">
+
+        <h3>Speaking Selections</h3>
+
+        <div class="speaker-videos">
+
+            {% for item in site.data.speakerVideos %}
+
+            <div>
+
+                <h2>{{item.publicTitle}}</h2>
+
+                <div style="position:relative;
+            padding-bottom:100%;
+            padding-bottom:-webkit-calc(56.25% + 100px);
+            padding-bottom:calc(56.25% + 100px);
+            height: 0;">
+
+                    <iframe style="position:absolute;
+            width: 100%;
+            height: 100%;"
+                            src="{{item.src}}"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
