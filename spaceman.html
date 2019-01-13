@@ -1,0 +1,123 @@
+---
+
+layout: majorHeader
+permalink: /spaceman
+title: Spaceman
+
+---
+
+<!--//TODO: Move this to a better spot-->
+
+<style>
+	.container{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.fixed{
+		width: 130%;
+	}
+	.flex-item{
+		flex-grow: 1;
+		flex-shrink: 0;
+		flex-basis: 33.3333%;
+	}
+
+	.accordion {
+		background-color: #eee;
+		color: #444;
+		cursor: pointer;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 15px;
+		transition: 0.4s;
+		margin-bottom: 15px;
+	}
+
+	.active, .accordion:hover {
+		background-color: white;
+	}
+
+	.accordion:after {
+		content: '\002B';
+		color: #777;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+
+	.active:after {
+		content: "\2212";
+	}
+
+	.panel {
+		padding: 0 18px;
+		background-color: white;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+	}
+
+
+</style>
+
+<div class="container">
+	<div class="flex-item">
+
+		<img style="max-width: 100%" src="/assets/images/cover2.jpg" alt="Book Cover 1">
+
+	</div>
+	<div class="flex-item" style="padding: 30px">
+
+		<!--<img style="max-width: 100%" src="/assets/images/cover1.jpg" alt="Book Cover 1">-->
+
+		<p><b>Mike’s Book, a NY Times Bestseller!</b></p>
+
+		<p>Mike’s space dreams were born the day Neil Armstrong set foot on the moon, but fulfilling them seemed unlikely, if not impossible for a working-class kid with a fear of heights. But Mike wouldn’t be deterred. He catapulted himself to Columbia and then MIT, was rejected three times by NASA, and still made it to space.</p>
+
+		<p>Science meets the most thrilling adventures in Spaceman, Mike’s story of never giving up and the power of teamwork to make anything possible. Taking us through the surreal wonder of his first spacewalk, the tragedy of losing friends in the Columbia shuttle accident, and the amazing challenge of fixing the Hubble telescope, Spaceman is a rare, remarkable glimpse at what having “the right stuff” really means.</p>
+
+		<button class="accordion">US Retailers</button>
+		<div class="panel">
+			<p>
+				<a href="http://links.penguinrandomhouse.com/type/affiliate/isbn/9781101903568/siteID/8001/retailerid/7/trackingcode/randohouseinc22186-20">@Amazon</a>
+				<br/>
+				<a href="http://links.penguinrandomhouse.com/type/affiliate/isbn/9781101903568/siteID/8001/retailerid/2/trackingcode/PRH7F53A46860">@Barnes and Noble</a>
+				<br/>
+				<a href="http://links.penguinrandomhouse.com/type/affiliate/isbn/9781101903568/siteID/8001/retailerid/6/trackingcode/penguinrandom">@IndieBound</a>
+				<br/>
+				<a href="http://links.penguinrandomhouse.com/type/affiliate/isbn/9781101903551/siteID/8001/retailerid/3/trackingcode/PRHBA5D166B37">@iBooks</a>
+				<br/>
+				<a href="http://links.penguinrandomhouse.com/type/affiliate/isbn/9781101903551/siteID/8001/retailerid/22/trackingcode/PRH97ACD1E5A2">@Google</a>
+				<br/>
+				<a href="http://links.penguinrandomhouse.com/type/affiliate/isbn/9781101903551/siteID/8001/retailerid/1/trackingcode/PRH97ACD1E5A2">@Kobo</a>
+				<br/>
+				<a href="https://800ceoread.com/products/spaceman-mike-massimino-english?selected=681191">@800CEOREAD</a>
+			</p>
+		</div>
+
+		<button class="accordion">UK Retailers</button>
+		<div class="panel">
+			<p>
+				<a href="https://www.amazon.co.uk/Spaceman-Astronauts-Unlikely-Journey-Universe/dp/1471149528/ref=sr_1_1?ie=UTF8&amp;qid=1475568133&amp;sr=8-1&amp;keywords=spaceman">@Amazon UK</a>
+				<br/>
+				<a href="https://www.waterstones.com/book/spaceman/mike-massimino/tanner-colby/9781471149528">@Waterstones</a>
+				<br/>
+				<a href="https://www.whsmith.co.uk/products/spaceman-an-astronauts-unlikely-journey-to-unlock-the-secrets-of-the-universe/9781471149542">@WHSmiths</a>
+			</p>
+		</div>
+	</div>
+</div>
+
+<hr/>
+<h3>Reviews</h3>
+
+<div class="spaceman-reviews" style="background-color: #eee">
+	{% for item in site.data.spacemanTestimonials %}
+	<div>
+	<p style="padding: 30px">{{item.quote}}<br/>
+	<b>- {{item.author}}</b></p>
+	</div>
+	{% endfor %}
+</div>

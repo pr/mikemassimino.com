@@ -8,8 +8,8 @@
   link : /media
 #- name : Speaker
 #  link : /speaker
-#- name : Book
-#  link : /book
+- name : Book
+  link : /spaceman
 #- name : From Space
 #  link : /from-space
 
