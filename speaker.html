@@ -75,6 +75,20 @@ title: Speaker
             {% endfor %}
         </div>
 
+        <hr/>
+
+        <div class="speaker-reviews" style="background-color: #eee">
+            {% for item in site.data.speakerTestimonials %}
+            <div>
+                <p style="padding: 30px">{{item.quote}}<br/><br/>
+                    <b>{{item.author}}</b><br/>
+                    <i>{{item.title}}</i>
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+
+
     </div>
 </div>
 
