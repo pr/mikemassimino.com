@@ -1,0 +1,19 @@
+---
+
+layout: majorHeader
+permalink: /from-space
+title: From Space
+
+---
+
+<h3>A selection of pictures of mike from space</h3>
+
+<div class="fromspaceimages">
+    {% for item in site.data.fromSpaceImages %}
+    <div>
+        <img style="max-width: 100%;" src="/assets/images/fromspace/{{ item.imageName}}" alt="Space Image">
+    </div>
+    {% endfor %}
+</div>
+
+
