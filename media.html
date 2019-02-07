@@ -10,12 +10,16 @@ title: Media
 
 <div class="media-nav">
     {% for item in site.data.mediaVideos %}
-    <div class="{{item.class}}" style="text-align: center; text-decoration-line: underline; text-decoration-style: double;">
+    <div class="{{item.class}}" style="text-align: center; text-decoration-line: underline;">
         {{item.name}}
     </div>
     {% endfor %}
-    <div class="Television" style="text-align: center; text-decoration-line: underline; text-decoration-style: double;">
+    <div class="Television" style="text-align: center; text-decoration-line: underline;">
         Additional Television
+    </div>
+
+    <div class="Other Media" style="text-align: center; text-decoration-line: underline;">
+        Written Media
     </div>
 
 </div>
@@ -63,10 +67,18 @@ title: Media
     <div class="Television">
         <h2>Additional Television</h2>
 
-        <a href="https://video.foxnews.com/v/5771947714001/?#sp=show-clips"><p> Mike on Fox News</p></a>
-        <a href="https://cheddar.com/videos/spacing-out-with-mike-massimino"><p> Mike on Cheddar</p></a>
+        <!--TODO: Look at moving these to the normal format-->
+        <a href="https://video.foxnews.com/v/5771947714001/?#sp=show-clips"><p>Fox News Appearance - Exoplanet Hunting Satellite</p></a>
+        <a href="https://video.foxnews.com/v/5979613341001/#sp=show-clips"><p>Fox News Appearance - Virgin Galactic Spaceship</p></a>
+        <a href="https://cheddar.com/videos/spacing-out-with-mike-massimino"><p>Cheddar Appearance</p></a>
     </div>
 
+    <div class="Other Media">
+        <h2>Written Media</h2>
+
+        <a href="https://www.nationalgeographic.com/science/2018/12/where-is-the-edge-of-space-and-what-is-the-karman-line/"><p>National Geographic</p></a>
+        <a href="https://www.barrons.com/articles/the-future-of-ultrahigh-end-space-travel-51544641200"><p>Barrons</p></a>
+    </div>
 
 </div>
 
