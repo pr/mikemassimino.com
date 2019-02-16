@@ -7,6 +7,7 @@ $('.speaker-videos').slick({
 	infinite: true,
 	fade: true,
 	cssEase: 'linear',
+	dots: true
 });
 
 
@@ -14,9 +15,7 @@ $('.speaker-reviews').slick({
 	centerMode: true,
 	centerPadding: '30px',
 	slidesToShow: 1,
-	autoplay: true,
-	autoplaySpeed: 2000,
-	arrows: false,
+	autoplay: false,
 	dots: true
 });
 
