@@ -1,25 +1,25 @@
 <!-- Footer -->
 <footer id="footer">
 	<div class="inner">
-		<!--<header>-->
-			<!--<h3>-->
-				<!--{% for item in site.data.nav %}-->
-					<!--<a style="text-decoration: none;"  href="{{ item.link }}" {% if page.url == item.link %}style="color: #7bd2ed;"{% endif %}>{{item.name}}</a>-->
-					<!--{% if forloop.last == false %}-->
-					<!--//-->
-					<!--{% endif %}-->
-				<!--{% endfor %}-->
-			<!--</h3>-->
-		<!--</header>-->
+        <div style="margin-bottom: 2em;">
+            <h3>
+                {% for item in site.data.nav %}
+                    <a style="text-decoration: none;"  href="{{ item.link }}" {% if page.url == item.link %}style="color: #7bd2ed;"{% endif %}>{{item.name}}</a>
+                    {% if forloop.last == false %}
+                    //
+                    {% endif %}
+                {% endfor %}
+            </h3>
+        </div>
 
         <div class="row">
-            <div style="text-align: left;" class="col-6 col-12-small">
-                <h2>Intrepid Museum</h2>
-                <p>Mike is the Senior Advisor of Space Programs at the Intrepid Museum in New York City. There are some fantastic programs coming up on board, don't miss out! For more information, please visit the <a href="https://www.intrepidmuseum.org/">Intrepid's website</a>.</p>
+            <div style="text-align: right" class="col-6 col-12-small">
+                <h2 style="margin-top: 1em;">Intrepid Museum</h2>
+                <p style="margin-right: 0.5em">Mike is the Senior Advisor of Space Programs at the Intrepid Museum in New York City. There are some fantastic programs coming up on board, don't miss out! For more information, please visit the <a href="https://www.intrepidmuseum.org/">Intrepid's website</a>.</p>
             </div>
-            <div style="text-align: left;" class="col-6 col-12-small">
-                <h2>Columbia SEAS</h2>
-                <p>Mike is a professor in Columbia University's engineering school, The Fu Foundation School of Engineering and Applied Science. For more information, please visit the <a href="https://engineering.columbia.edu/">SEAS website</a>.</p>
+            <div style="text-align: right" class="col-6 col-12-small">
+                <h2 style="margin-top: 1em;">Columbia SEAS</h2>
+                <p style="margin-right: 0.5em">Mike is a professor in Columbia University's engineering school, The Fu Foundation School of Engineering and Applied Science. For more information, please visit the <a href="https://engineering.columbia.edu/">SEAS website</a>.</p>
             </div>
         </div>
 
