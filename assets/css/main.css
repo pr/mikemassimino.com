@@ -2728,27 +2728,6 @@ input, select, textarea {
 			top: 5em;
 		}
 
-			.spotlight .image:before {
-				content: '';
-				display: block;
-				border-radius: 0.5em 0.5em 0 0;
-				border: solid 2px;
-				border-bottom: 0;
-				height: 3em;
-			}
-
-			.spotlight .image:after {
-				content: '';
-				display: block;
-				position: absolute;
-				border-radius: 0.5em;
-				height: 0.25em;
-				left: 50%;
-				margin-left: -1.5em;
-				top: 1.5em;
-				width: 3em;
-			}
-
 			.spotlight .image img {
 				-moz-transition: opacity 1s ease;
 				-webkit-transition: opacity 1s ease;
@@ -2808,15 +2787,6 @@ input, select, textarea {
 	.spotlight .image {
 		background-color: #eaeaea;
 	}
-
-		.spotlight .image:before {
-			border-color: #eaeaea;
-			background-color: #ffffff;
-		}
-
-		.spotlight .image:after {
-			background-color: #eaeaea;
-		}
 
 /* Features */
 
