@@ -25,9 +25,10 @@
 - name : Late Show with David Letterman
   src : https://www.youtube.com/embed/ZWMl9BwBQ2g?rel=0
   class: Television
-- name : Late Show with Craig Ferguson
-  src : https://www.youtube.com/embed/h0Vnc3BWLpw?rel=0
-  class: Television
+# Still looking for replacement
+#- name : Late Show with Craig Ferguson
+#  src : https://www.youtube.com/embed/h0Vnc3BWLpw?rel=0
+#  class: Television
 - name : ISS Science Garage
   src : https://www.youtube.com/embed/akw6XBjD5ho?rel=0
   class: Other Media
