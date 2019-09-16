@@ -3,91 +3,40 @@
 layout: majorHeader
 permalink: /media
 title: Media
+pageSpecificCSSName: media
+pageSpecificJSName: media
 
 ---
 
-<h3>Select Media Title (Scrollable)</h3>
+<div class="Media-Base Media">
+    <dl>
+        {% for item in site.data.mediaVideos %}
+            <dt>{{item.name}}</dt>
+            <dd>
+                <div style="
+                    position:relative;
+                    padding-bottom:100%;
+                    padding-bottom:-webkit-calc(56.25%);
+                    padding-bottom:calc(56.25%);
+                    height: 0;">
 
-<div class="media-nav">
-    {% for item in site.data.mediaVideos %}
-    <div class="{{item.class}}" style="text-align: center; text-decoration-line: underline;">
-        {{item.name}}
-    </div>
-    {% endfor %}
-    <div class="Television" style="text-align: center; text-decoration-line: underline;">
-        Additional Television
-    </div>
+                    <iframe style="position:absolute;
+                    width: 100%;
+                    height: 100%;"
+                        src="{{item.src}}"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </dd>
+        {% endfor %}
 
-    <div class="Other Media" style="text-align: center; text-decoration-line: underline;">
-        Written Media
-    </div>
 
+<!--        These guys are a pain to embed, and you wonder why no wordpress plugin works for this :( -->
+<!--            <a href="https://video.foxnews.com/v/5771947714001/?#sp=show-clips"><p>Fox News Appearance - Exoplanet Hunting Satellite</p></a>-->
+<!--            <a href="https://video.foxnews.com/v/5979613341001/#sp=show-clips"><p>Fox News Appearance - Virgin Galactic Spaceship</p></a>-->
+<!--            <a href="https://video.foxnews.com/v/6002239113001/#sp=show-clips"><p>Fox News Appearance - Legacy of NASA's Mars Opportunity Rover</p></a>-->
+<!--            <a href="https://cheddar.com/videos/spacing-out-with-mike-massimino"><p>Cheddar Appearance</p></a>-->
+    </dl>
 </div>
-
-<hr/>
-
-<h3>Filter Media</h3>
-
-<button class="showOnlyTelevisionAppearances">Show Only Television</button>
-
-
-
-
-<hr/>
-
-<div class="media-videos">
-
-    {% for item in site.data.mediaVideos %}
-
-    <div class="{{item.class}}">
-
-        <h2>{{item.name}}</h2>
-
-        <div style="position:relative;
-        padding-bottom:100%;
-        padding-bottom:-webkit-calc(56.25% + 100px);
-        padding-bottom:calc(56.25% + 100px);
-        height: 0;">
-
-            <iframe style="position:absolute;
-        width: 100%;
-        height: 100%;"
-                    src="{{item.src}}"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-            </iframe>
-
-        </div>
-
-    </div>
-
-    {% endfor %}
-
-    <div class="Television">
-        <h2>Additional Television</h2>
-
-        <!--TODO: Look at moving these to the normal format-->
-        <a href="https://video.foxnews.com/v/5771947714001/?#sp=show-clips"><p>Fox News Appearance - Exoplanet Hunting Satellite</p></a>
-        <a href="https://video.foxnews.com/v/5979613341001/#sp=show-clips"><p>Fox News Appearance - Virgin Galactic Spaceship</p></a>
-        <a href="https://video.foxnews.com/v/6002239113001/#sp=show-clips"><p>Fox News Appearance - Legacy of NASA's Mars Opportunity Rover</p></a>
-        <a href="https://cheddar.com/videos/spacing-out-with-mike-massimino"><p>Cheddar Appearance</p></a>
-    </div>
-
-    <div class="Other Media">
-        <h2>Written Media</h2>
-
-        <a href="https://www.nationalgeographic.com/science/2018/12/where-is-the-edge-of-space-and-what-is-the-karman-line/"><p>National Geographic</p></a>
-        <a href="https://www.barrons.com/articles/the-future-of-ultrahigh-end-space-travel-51544641200"><p>Barrons</p></a>
-        <a href=https://www.popularmechanics.com/space/solar-system/a26454631/how-to-go-to-space/"><p>Popular Mechanics</p></a>
-        <a href=https://www.space.com/back-to-moon-astronaut-mike-massimino.html"><p>Space.com: Back to the Moon</p></a>
-        <a href=https://www.supercluster.com/editorial/the-complex-relationship-between-mental-health-and-space-travel"><p>Space Cluster</p></a>
-        <a href=https://video.foxnews.com/v/6008971584001/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+foxnews/most-popular+(Internal+-+Most+Popular+Content)#sp=show-clips"><p>Fox News</p></a>
-        <a href=https://www.space.com/astronaut-mike-massimino-apollo-inspiration.html?fbclid=IwAR3z_1va2hSHJz93tNUJ9Itpsoz2ieLKFkxoPPAoVzraV8LzHycUJ5cWkoA"><p>Space.com: Apollo Missions</p></a>
-    </div>
-
-</div>
-
-
-
-
