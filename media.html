@@ -8,35 +8,126 @@ pageSpecificJSName: media
 
 ---
 
-<div class="Media-Base Media">
-    <dl>
-        {% for item in site.data.mediaVideos %}
-            <dt>{{item.name}}</dt>
-            <dd>
-                <div style="
-                    position:relative;
-                    padding-bottom:100%;
-                    padding-bottom:-webkit-calc(56.25%);
-                    padding-bottom:calc(56.25%);
-                    height: 0;">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-                    <iframe style="position:absolute;
-                    width: 100%;
-                    height: 100%;"
-                        src="{{item.src}}"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </dd>
-        {% endfor %}
+<!--ask mike about new sizzle-->
 
+<header>
+    <h2>Introduction</h2>
+</header>
 
-<!--        These guys are a pain to embed, and you wonder why no wordpress plugin works for this :( -->
-<!--            <a href="https://video.foxnews.com/v/5771947714001/?#sp=show-clips"><p>Fox News Appearance - Exoplanet Hunting Satellite</p></a>-->
-<!--            <a href="https://video.foxnews.com/v/5979613341001/#sp=show-clips"><p>Fox News Appearance - Virgin Galactic Spaceship</p></a>-->
-<!--            <a href="https://video.foxnews.com/v/6002239113001/#sp=show-clips"><p>Fox News Appearance - Legacy of NASA's Mars Opportunity Rover</p></a>-->
-<!--            <a href="https://cheddar.com/videos/spacing-out-with-mike-massimino"><p>Cheddar Appearance</p></a>-->
-    </dl>
+<div class="media-video">
+    <div>
+        <a href="//www.youtube.com/embed/2Q_hylPTb94" data-fancybox="introduction" data-caption="Introduction">
+            <img src="http://i1.ytimg.com/vi/2Q_hylPTb94/mqdefault.jpg" alt="Introduction" />
+        </a>
+        <p>An Introduction to Mike</p>
+    </div>
+</div>
+
+<header>
+    <h2>News</h2>
+</header>
+
+<div class="media-video">
+    <div>
+        <a href="javascript:" data-fancybox="news" data-type="iframe" data-src="https://abcnews.go.com/video/embed?id=46979317" data-caption="Good Morning America">
+            <img src="./assets/images/media_thumbnails/good_morning_america.jpg" alt="Good Morning America" />
+        </a>
+        <p>Good Morning America</p>
+    </div>
+    <div>
+        <a href="javascript:" data-fancybox="news" data-type="iframe" data-src="https://www.today.com/offsite/ex-astronaut-rock-whizzing-past-earth-came-from-outside-our-solar-system-1117394499522" data-caption="Today (Astroid Appearance)">
+            <img src="./assets/images/media_thumbnails/today_astroid_appearance.jpg" alt="Today (Astroid Appearance)" />
+        </a>
+        <p>Today (Astroid Appearance)</p>
+    </div>
+    <div>
+        <a href="javascript:" data-fancybox="news" data-type="iframe" data-src="https://video.foxnews.com/v/5771947714001/?#sp=show-clips" data-caption="Fox News (Exoplanet Hunting Satellite)">
+            <img src="./assets/images/media_thumbnails/fox_news_exoplanet.jpg" alt="Fox News (Exoplanet Hunting Satellite)" />
+        </a>
+        <p>Fox News (Exoplanet Hunting Satellite)</p>
+    </div>
+    <div>
+        <a href="javascript:" data-fancybox="news" data-type="iframe" data-src="http://www.today.com/offsite/solar-eclipse-ex-astronaut-explains-how-to-prepare-how-to-watch-1024919107989" data-caption="Today (Eclipse Appearance)">
+            <img src="./assets/images/media_thumbnails/today_eclipse_appearance.jpg" alt="Today (Eclipse Appearance)" />
+        </a>
+        <p>Today (Eclipse Appearance)</p>
+    </div>
+    <div>
+        <a href="javascript:" data-fancybox="news" data-type="iframe" data-src="https://video.foxnews.com/v/5979613341001/?#sp=show-clips" data-caption="Fox News (Virgin Galactic Spaceship)">
+            <img src="./assets/images/media_thumbnails/fox_news_virgin.jpg" alt="Fox News (Virgin Galactic Spaceship)" />
+        </a>
+        <p>Fox News (Virgin Galactic Spaceship)</p>
+    </div>
+    <div>
+        <a href="javascript:" data-fancybox="news" data-type="iframe" data-src="https://abcnews.go.com/video/embed?id=20478576" data-caption="ABC News">
+            <img src="./assets/images/media_thumbnails/abc_news.jpg" alt="ABC News" />
+        </a>
+        <p>ABC News</p>
+    </div>
+    <div>
+        <a href="javascript:" data-fancybox="news" data-type="iframe" data-src="https://video.foxnews.com/v/6002239113001/?#sp=show-clips" data-caption="Fox News (Legacy of Opportunity Rover)">
+            <img src="./assets/images/media_thumbnails/fox_news_legacy.jpg" alt="Fox News (Legacy of Opportunity Rover)" />
+        </a>
+        <p>Fox News (Legacy of Opportunity Rover)</p>
+    </div>
+    <div>
+        <a href="javascript:" data-fancybox="news" data-type="iframe" data-src="https://cheddar.com/media/spacing-out-with-mike-massimino/player" data-caption="Cheddar">
+            <img src="./assets/images/media_thumbnails/cheddar.jpg" alt="Cheddar" />
+        </a>
+        <p>Cheddar</p>
+    </div>
+</div>
+
+<header>
+    <h2>Television</h2>
+</header>
+
+<div class="media-video">
+    <div>
+        <a href="//www.youtube.com/embed/ZWMl9BwBQ2g" data-fancybox="tv" data-caption="Late Show with David Letterman">
+            <img src="http://i1.ytimg.com/vi/ZWMl9BwBQ2g/mqdefault.jpg" alt="Late Show with David Letterman" />
+        </a>
+        <p>Late Show with David Letterman</p>
+    </div>
+    <div>
+        <a href="//www.youtube.com/embed/gMZNx7bxZes" data-fancybox="tv" data-caption="Big Bang Theory Clip">
+            <img src="http://i1.ytimg.com/vi/gMZNx7bxZes/mqdefault.jpg" alt="Big Bang Theory Clip" />
+        </a>
+        <p>Big Bang Theory Clip</p>
+    </div>
+    <div>
+        <a href="//www.youtube.com/embed/QoR3Un2Ws24" data-fancybox="tv" data-caption="Additional Big Bang Theory Clip">
+            <img src="http://i1.ytimg.com/vi/QoR3Un2Ws24/mqdefault.jpg" alt="Additional Big Bang Theory Clip" />
+        </a>
+        <p>Additional Big Bang Theory Clip</p>
+    </div>
+    <div>
+        <a href="//www.youtube.com/embed/VGwoobELFhY" data-fancybox="tv" data-caption="SNL Joke">
+            <img src="http://i1.ytimg.com/vi/VGwoobELFhY/mqdefault.jpg" alt="SNL Joke" />
+        </a>
+        <p>SNL Joke about Mike</p>
+    </div>
+</div>
+
+<header>
+    <h2>NASA</h2>
+</header>
+
+<div class="media-video">
+    <div>
+        <a href="//www.youtube.com/embed/mwTNPMpCCMM" data-fancybox="nasa" data-caption="Mike's Spacewalk">
+            <img src="http://i1.ytimg.com/vi/mwTNPMpCCMM/mqdefault.jpg" alt="Mike's Spacewalk" />
+        </a>
+        <p>Mike's Spacewalk</p>
+    </div>
+    <div>
+        <a href="//www.youtube.com/embed/akw6XBjD5ho" data-fancybox="personal" data-caption="ISS Science Garage">
+            <img src="http://i1.ytimg.com/vi/akw6XBjD5ho/mqdefault.jpg" alt="ISS Science Garage" />
+        </a>
+        <p>ISS Science Garage</p>
+    </div>
 </div>
