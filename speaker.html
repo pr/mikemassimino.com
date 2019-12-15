@@ -4,100 +4,137 @@ layout: majorHeader
 permalink: /speaker
 title: Speaker
 pageSpecificJSName: speaker
+pageSpecificCSSName: speaker
 
 ---
 
-<div class="row">
-    <div class="col-6 col-12-small">
-        <h3>Introduction</h3>
-        <p>Mike shares with audiences personal stories of inspiration, innovation,
-            teamwork and leadership as drawn from his experiences in one of the
-            greatest and most dangerous jobs someone can have—NASA astronaut.
-            Through humor and storytelling, he highlights the pursuit and achievement
-            of a childhood dream, the dedication and teamwork necessary to train for
-            one of NASA’s most difficult space missions, the determination needed
-            to face tragedies like the Columbia space shuttle accident, and
-            the innovation and leadership necessary to overcome seemingly
-            insurmountable trials when in space and beyond. He leaves his
-            audiences understanding the value of having passion for what you do,
-            of perseverance in achieving a goal, of building a team to meet great
-            challenges, and of creativity and innovation in problem solving. He
-            also inspires audiences with the awe and beauty of space and shares
-            his thoughts on the future—both personal and in regard to the ever-changing
-            and competitive space program.</p>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-        <p><a href="https://mikemassimino.paperform.co/" class="button primary large" style="margin-bottom: 20px">Contact Mike</a></p>
+<div class="col-12 col-12-small">
+    <h2>Introduction</h2>
+    <p>Mike shares with audiences personal stories of inspiration, innovation,
+        teamwork and leadership as drawn from his experiences in one of the
+        greatest and most dangerous jobs someone can have—NASA astronaut.
+        Through humor and storytelling, he highlights the pursuit and achievement
+        of a childhood dream, the dedication and teamwork necessary to train for
+        one of NASA’s most difficult space missions, the determination needed
+        to face tragedies like the Columbia space shuttle accident, and
+        the innovation and leadership necessary to overcome seemingly
+        insurmountable trials when in space and beyond. He leaves his
+        audiences understanding the value of having passion for what you do,
+        of perseverance in achieving a goal, of building a team to meet great
+        challenges, and of creativity and innovation in problem solving. He
+        also inspires audiences with the awe and beauty of space and shares
+        his thoughts on the future—both personal and in regard to the ever-changing
+        and competitive space program.</p>
 
-        <h3>Topics</h3>
-        <p>Achievement, Courage, Crisis Management,
-            Disaster Preparedness, Innovation, Inspiring Lives,
-            Leadership, Motivation, Overcoming Obstacles and Challenges,
-            Personal Growth, Risk Management, Science, Teamwork</p>
+    <hr/>
 
-        <h3>Past Clients</h3>
-        <p>
-            Dell, Oracle, Glastonberry Music Festival, Triple Blitz – Microsoft, Intel, Hewlett Packard,
-            The LEGO Group, Northwestern Mutual, Reliant NRG, American Museum of Natural History,
-            Sunovion Pharmaceuticals Inc, CVS Caremark, CNBC, Trader Joe’s, Cook Medical, Arm & Hammer,
-            Ministry of Education - United Arab Emirates, Enservio, MaritzCX, Zurich Insurance, Genentech,
-            Pure Insurance, NAPA Auto Parts, Dematic, Gartner, Inc., McCann Health, Allscripts Healthcare Systems,
-            Dodge Data Analytics, WinTrust, CohnReznick, Pratt & Whitney, Transylvania City Library Foundation,
-            Devicor Medical Products, National Association of Retired Federal Employees, Independent Financial Group,
-            Southwest Power Pool, Jabra, Pharmaceutical Research and Manufacturers of America, Independent Financial Group,
-            Pfizer, National Council of Examiners for Engineering and Surveying, Acumatica, Clark Planetarium, MIT,
-            Envision Career & Leadership Programs, Healthcare Business Media, National Science Teachers Association,
-            Annual STEM Forum & Expo, Sudler & Hennessey, Anthony’s Coal Fired Pizza, Tony LaRussa Leaders and Legends,
-            Imprivata, Cook Vascular Programs.
-        </p>
-    </div>
-    <div class="col-6 col-12-small">
+    <h2>Speaking Selections</h2>
 
-        <h3>Speaking Selections</h3>
-
-        <div class="speaker-videos">
-
-            {% for item in site.data.speakerVideos %}
-
-            <div>
-
-                <h2>{{item.publicTitle}}</h2>
-
-                <div style="position:relative;
-            padding-bottom:100%;
-            padding-bottom:-webkit-calc(56.25% + 100px);
-            padding-bottom:calc(56.25% + 100px);
-            height: 0;">
-
-                    <iframe style="position:absolute;
-            width: 100%;
-            height: 100%;"
-                            src="{{item.src}}"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                    </iframe>
-
-                </div>
-
-            </div>
-
-            {% endfor %}
+    <div class="media-video">
+        <div>
+            <a href="//www.youtube.com/embed/ALtxCU32wis" data-fancybox="speaking_selections" data-caption="Massimino on Following Dreams and Setting Goals">
+                <img src="http://i1.ytimg.com/vi/ALtxCU32wis/mqdefault.jpg" alt="Massimino on Following Dreams and Setting Goals" />
+            </a>
+            <p>Massimino on Following Dreams and Setting Goals</p>
         </div>
 
-        <hr/>
-
-        <div class="speaker-reviews" style="background-color: #eee">
-            {% for item in site.data.speakerTestimonials %}
-            <div>
-                <p style="padding: 30px">{{item.quote}}<br/><br/>
-                    <b>{{item.author}}</b><br/>
-                </p>
-            </div>
-            {% endfor %}
+        <div>
+            <a href="//www.youtube.com/embed/roRVQhcz6so" data-fancybox="speaking_selections" data-caption="Massimino on Innovation and Problem Solving">
+                <img src="http://i1.ytimg.com/vi/roRVQhcz6so/mqdefault.jpg" alt="Massimino on Innovation and Problem Solving" />
+            </a>
+            <p>Massimino on Innovation and Problem Solving</p>
         </div>
 
+        <div>
+            <a href="//www.youtube.com/embed/kMySqaPtA8A" data-fancybox="speaking_selections" data-caption="Massimino on An Astronaut's View of Space">
+                <img src="http://i1.ytimg.com/vi/kMySqaPtA8A/mqdefault.jpg" alt="Massimino on An Astronaut's View of Space" />
+            </a>
+            <p>Massimino on An Astronaut's View of Space</p>
+        </div>
 
+        <div>
+            <a href="//www.youtube.com/embed/BUKzLRVgN1I" data-fancybox="speaking_selections" data-caption="Massimino on Recognizing the Purpose in Your Work">
+                <img src="http://i1.ytimg.com/vi/BUKzLRVgN1I/mqdefault.jpg" alt="Massimino on Recognizing the Purpose in Your Work" />
+            </a>
+            <p>Massimino on Recognizing the Purpose in Your Work</p>
+        </div>
+
+        <div>
+            <a href="//www.youtube.com/embed/wVtq8zdJ5uM" data-fancybox="speaking_selections" data-caption="Massimino on Fixing the Hubble Telescope">
+                <img src="http://i1.ytimg.com/vi/wVtq8zdJ5uM/mqdefault.jpg" alt="Massimino on Fixing the Hubble Telescope" />
+            </a>
+            <p>Massimino on Fixing the Hubble Telescope</p>
+        </div>
+
+        <div>
+            <a href="//www.youtube.com/embed/5Ixw910hEx8" data-fancybox="speaking_selections" data-caption="Massimino on Teamwork and Never Giving Up">
+                <img src="http://i1.ytimg.com/vi/5Ixw910hEx8/mqdefault.jpg" alt="Massimino on Teamwork and Never Giving Up" />
+            </a>
+            <p>Massimino on Teamwork and Never Giving Up</p>
+        </div>
     </div>
+
+    <p><a href="https://mikemassimino.paperform.co/" class="button primary large" style="margin-bottom: 20px">Contact Mike</a></p>
+
+    <div class="speaker-reviews" style="background-color: #eee">
+        {% for item in site.data.speakerTestimonials %}
+        <div>
+            <p style="padding: 30px">{{item.quote}}<br/><br/>
+                <b>{{item.author}}</b><br/>
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+
+<!--    <div class="spaceman-reviews" style="background-color: #eee">-->
+<!--        {% for item in site.data.spacemanTestimonials %}-->
+<!--        <div>-->
+<!--            <p style="padding: 30px">{{item.quote}}<br/>-->
+<!--                <b>- {{item.author}}</b></p>-->
+<!--        </div>-->
+<!--        {% endfor %}-->
+<!--    </div>-->
+
+    <hr/>
+
+    <h2>Topics</h2>
+    <p>
+        Achievement, Courage, Crisis Management,
+        Disaster Preparedness, Innovation, Inspiring Lives,
+        Leadership, Motivation, Overcoming Obstacles and Challenges,
+        Personal Growth, Risk Management, Science, Teamwork
+    </p>
+
+    <hr/>
+
+    <h2>Past Clients</h2>
+    <p>
+        Dell, Oracle, Glastonberry Music Festival, Triple Blitz – Microsoft, Intel, Hewlett Packard,
+        The LEGO Group, Northwestern Mutual, Reliant NRG, American Museum of Natural History,
+        Sunovion Pharmaceuticals Inc, CVS Caremark, CNBC, Trader Joe’s, Cook Medical, Enservio,
+        Arm &amp; Hammer, Ministry of Education - United Arab Emirates, Maritz CX, Zurich Insurance,
+        Genentech, Pure Insurance, NAPA Auto Parts, Dematic, Gartner, Inc., McCann Health,
+        Allscripts Healthcare Systems, Dodge Data Analytics, WinTrust, Cohn Reznick, Pratt &amp; Whitney,
+        Transylvania City Library Foundation, Devicor Medical Products, Southwest Power Pool,
+        National Association of Retired Federal Employees, Independent Financial Group, Jabra,
+        Pharmaceutical Research and Manufacturers of America, Independent Financial Group, Pfizer,
+        National Council of Examiners for Engineering and Surveying, Acumatica, Clark Planetarium,
+        MIT, Envision Career &amp; Leadership Programs, Healthcare Business Media, W.W. Grainger, Inc.,
+        National Science Teachers Association, Annual STEM Forum &amp; Expo, Sudler &amp; Hennessey,
+        Anthony’s Coal Fired Pizza, Tony LaRussa Leaders and Legends, Cook Vascular Programs,
+        Imprivata, Social Chain, American Express, Riverwood Capital, Sandler O’Neill and Partners, LP,
+        United Healthcare, Stark County Library, Johnson &amp; Johnson- Janssen Pharmaceuticals, Cigna,
+        Total Wine and More, Micro Focus, Ogilvy Health, Jones, Lang, LaSalle (JLL), Mercedes, AbbVie,
+        Jane Street, Vermont Captive Insurance, Verizon, Smith and Associates, Fidelity Investments,
+        ASHRAE (American Society of Heating, Refrigerating &amp;Air-Conditioning Engineers), SAE, Zoom,
+        United Business Bankers, CPCU Society (Society of Chartered Property Casualty Underwriters),
+        PCI Security Standards Council, Shell Oil, Raytheon, Boy Scouts of America, 7 x 24 Exchange,
+        Blue Ridge Community College, Exyn Technologies, Orlando Health, Idaho General Contractors
+    </p>
 </div>
 
 

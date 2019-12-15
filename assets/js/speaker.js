@@ -12,10 +12,33 @@ $('.speaker-videos').slick({
 
 
 $('.speaker-reviews').slick({
+
 	centerMode: true,
 	centerPadding: '30px',
-	slidesToShow: 1,
-	autoplay: false,
-	dots: true
+	slidesToShow: 3,
+	autoplay: true,
+	autoplaySpeed: 2000,
+	arrows: false,
+
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				arrows: false,
+				centerMode: true,
+				centerPadding: '40px',
+				slidesToShow: 3
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				arrows: false,
+				centerMode: true,
+				centerPadding: '40px',
+				slidesToShow: 1
+			}
+		}
+	]
 });
 
