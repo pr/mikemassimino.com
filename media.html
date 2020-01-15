@@ -12,67 +12,20 @@ pageSpecificJSName: media
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-<!--ask mike about new sizzle-->
-
 <header>
     <h2>News</h2>
 </header>
 
 <div class="media-video">
-    <div>
-        <a href="//www.youtube.com/embed/GxKXketbmpw" data-fancybox="news" data-caption="The 11th Hour with Brian Williams">
-            <img src="http://i1.ytimg.com/vi/GxKXketbmpw/mqdefault.jpg" alt="The 11th Hour with Brian Williams" />
-        </a>
-        <p>The 11th Hour with Brian Williams</p>
-    </div>
-    <div>
-        <a href="//www.youtube.com/embed/XjLh4WgqDUw" data-fancybox="news" data-caption="Erin Burnett Out Front">
-            <img src="http://i1.ytimg.com/vi/XjLh4WgqDUw/mqdefault.jpg" alt="Erin Burnett Out Front" />
-        </a>
-        <p>Erin Burnett Out Front</p>
-    </div>
-    <div>
-        <a href="javascript:" data-fancybox="news" data-type="iframe" data-src="https://abcnews.go.com/video/embed?id=46979317" data-caption="Good Morning America">
-            <img src="./assets/images/media_thumbnails/good_morning_america.jpg" alt="Good Morning America" />
-        </a>
-        <p>Good Morning America</p>
-    </div>
-    <div>
-        <a href="javascript:" data-fancybox="news" data-type="iframe" data-src="https://www.today.com/offsite/ex-astronaut-rock-whizzing-past-earth-came-from-outside-our-solar-system-1117394499522" data-caption="Today (Astroid Appearance)">
-            <img src="./assets/images/media_thumbnails/today_astroid_appearance.jpg" alt="Today (Astroid Appearance)" />
-        </a>
-        <p>Today (Astroid Appearance)</p>
-    </div>
-    <div>
-        <a href="javascript:" data-fancybox="news" data-type="iframe" data-src="https://video.foxnews.com/v/6061612132001/?#sp=show-clips" data-caption="Fox News (Apollo 11 Anniversary)">
-            <img src="./assets/images/media_thumbnails/fox_news_apollo_11.jpg" alt="Fox News (Apollo 11 Anniversary)" />
-        </a>
-        <p>Fox News (Apollo 11 Anniversary)</p>
-    </div>
-    <div>
-        <a href="javascript:" data-fancybox="news" data-type="iframe" data-src="http://www.today.com/offsite/solar-eclipse-ex-astronaut-explains-how-to-prepare-how-to-watch-1024919107989" data-caption="Today (Eclipse Appearance)">
-            <img src="./assets/images/media_thumbnails/today_eclipse_appearance.jpg" alt="Today (Eclipse Appearance)" />
-        </a>
-        <p>Today (Eclipse Appearance)</p>
-    </div>
-    <div>
-        <a href="javascript:" data-fancybox="news" data-type="iframe" data-src="https://video.foxnews.com/v/5979613341001/?#sp=show-clips" data-caption="Fox News (Virgin Galactic Spaceship)">
-            <img src="./assets/images/media_thumbnails/fox_news_virgin.jpg" alt="Fox News (Virgin Galactic Spaceship)" />
-        </a>
-        <p>Fox News (Virgin Galactic Spaceship)</p>
-    </div>
-    <div>
-        <a href="javascript:" data-fancybox="news" data-type="iframe" data-src="https://abcnews.go.com/video/embed?id=20478576" data-caption="ABC News">
-            <img src="./assets/images/media_thumbnails/abc_news.jpg" alt="ABC News" />
-        </a>
-        <p>ABC News</p>
-    </div>
-    <div>
-        <a href="javascript:" data-fancybox="news" data-type="iframe" data-src="https://cheddar.com/media/spacing-out-with-mike-massimino/player" data-caption="Cheddar">
-            <img src="./assets/images/media_thumbnails/cheddar.jpg" alt="Cheddar" />
-        </a>
-        <p>Cheddar</p>
-    </div>
+    {% include youtubeVideo.html id="GxKXketbmpw" title="The 11th Hour with Brian Williams" tag="news" %}
+    {% include youtubeVideo.html id="XjLh4WgqDUw" title="Erin Burnett Out Front" tag="news" %}
+    {% include newsVideo.html title="Good Morning America" tag="news" thumbnail_name="good_morning_america" source="https://abcnews.go.com/video/embed?id=46979317" %}
+    {% include newsVideo.html title="Today (Astroid Appearance)" tag="news" thumbnail_name="today_astroid_appearance" source="https://www.today.com/offsite/ex-astronaut-rock-whizzing-past-earth-came-from-outside-our-solar-system-1117394499522" %}
+    {% include newsVideo.html title="Fox News (Apollo 11 Anniversary)" tag="news" thumbnail_name="fox_news_apollo_11" source="https://video.foxnews.com/v/6061612132001/?#sp=show-clips" %}
+    {% include newsVideo.html title="Today (Eclipse Appearance)" tag="news" thumbnail_name="today_eclipse_appearance" source="http://www.today.com/offsite/solar-eclipse-ex-astronaut-explains-how-to-prepare-how-to-watch-1024919107989" %}
+    {% include newsVideo.html title="Fox News (Virgin Galactic Spaceship)" tag="news" thumbnail_name="fox_news_virgin" source="https://video.foxnews.com/v/5979613341001/?#sp=show-clips" %}
+    {% include newsVideo.html title="ABC News" tag="news" thumbnail_name="abc_news" source="https://video.foxnews.com/v/5979613341001/?#sp=show-clips" %}
+    {% include newsVideo.html title="Cheddar" tag="news" thumbnail_name="cheddar" source="https://cheddar.com/media/spacing-out-with-mike-massimino/player" %}
 </div>
 
 <header>
@@ -80,96 +33,28 @@ pageSpecificJSName: media
 </header>
 
 <div class="media-video">
-    <div>
-        <a href="//www.youtube.com/embed/ZWMl9BwBQ2g" data-fancybox="tv" data-caption="Late Show with David Letterman">
-            <img src="http://i1.ytimg.com/vi/ZWMl9BwBQ2g/mqdefault.jpg" alt="Late Show with David Letterman" />
-        </a>
-        <p>Late Show with David Letterman</p>
-    </div>
-    <div>
-        <a href="//www.youtube.com/embed/gMZNx7bxZes" data-fancybox="tv" data-caption="Big Bang Theory Clip">
-            <img src="http://i1.ytimg.com/vi/gMZNx7bxZes/mqdefault.jpg" alt="Big Bang Theory Clip" />
-        </a>
-        <p>Big Bang Theory Clip</p>
-    </div>
-    <div>
-        <a href="//www.youtube.com/embed/QoR3Un2Ws24" data-fancybox="tv" data-caption="Additional Big Bang Theory Clip">
-            <img src="http://i1.ytimg.com/vi/QoR3Un2Ws24/mqdefault.jpg" alt="Additional Big Bang Theory Clip" />
-        </a>
-        <p>Additional Big Bang Theory Clip</p>
-    </div>
-    <div>
-        <a href="//www.youtube.com/embed/VGwoobELFhY" data-fancybox="tv" data-caption="SNL Joke">
-            <img src="http://i1.ytimg.com/vi/VGwoobELFhY/mqdefault.jpg" alt="SNL Joke" />
-        </a>
-        <p>SNL Joke about Mike</p>
-    </div>
+    {% include youtubeVideo.html id="ZWMl9BwBQ2g" title="Late Show with David Letterman" tag="tv" %}
+    {% include youtubeVideo.html id="gMZNx7bxZes" title="Big Bang Theory Clip" tag="tv" %}
+    {% include youtubeVideo.html id="QoR3Un2Ws24" title="Additional Big Bang Theory Clip" tag="tv" %}
+    {% include youtubeVideo.html id="VGwoobELFhY" title="SNL Joke about Mike" tag="tv" %}
 </div>
-
-<!--<header>-->
-<!--    <h2>Conferences</h2>-->
-<!--</header>-->
-
-<!--https://www.youtube.com/watch?v=0hmOwBtfJv0-->
-<!--The Difference Between Impossible and Unlikely-->
-<!--https://www.youtube.com/watch?time_continue=1124&v=HuyYZJ3sSPg&feature=emb_logo-->
-<!--Never Let Failure Stop You-->
-<!--https://www.youtube.com/watch?time_continue=1179&v=ccvunAdkdy0&feature=emb_logo-->
-<!--Mike Massimino and Adam Savage - on Admitting Your Mistakes-->
-<!--https://www.youtube.com/watch?time_continue=1087&v=VKjbjkUYgZ0&feature=emb_logo-->
-<!--The true meaning of risk-->
-<!--https://www.youtube.com/watch?time_continue=26&v=V9H5C9XE_X0&feature=emb_logo-->
-<!--https://www.youtube.com/watch?time_continue=657&v=YqeErlooWms&feature=emb_logo-->
-
-
 
 <header>
     <h2>Appearances</h2>
 </header>
 
 <div class="media-video">
-    <div>
-        <a href="//www.youtube.com/embed/TmrsH1F3M68" data-fancybox="appearances" data-caption="Unboxing & Building LEGO in Zero Gravity!">
-            <img src="http://i1.ytimg.com/vi/TmrsH1F3M68/mqdefault.jpg" alt="Unboxing & Building LEGO in Zero Gravity!" />
-        </a>
-        <p>Unboxing & Building LEGO in Zero Gravity!</p>
-    </div>
-    <div>
-        <a href="//www.youtube.com/embed/Ok0O9YzHPDo" data-fancybox="appearances" data-caption="Mike Massimino, a citizen of Earth">
-            <img src="http://i1.ytimg.com/vi/Ok0O9YzHPDo/mqdefault.jpg" alt="Mike Massimino, a citizen of Earth" />
-        </a>
-        <p>Mike Massimino, a citizen of Earth</p>
-    </div>
-    <div>
-        <a href="//www.youtube.com/embed/Kc7Upg8PFxw" data-fancybox="appearances" data-caption="360° VR Space Safari">
-            <img src="http://i1.ytimg.com/vi/Kc7Upg8PFxw/mqdefault.jpg" alt="360° VR Space Safari" />
-        </a>
-        <p>360° VR Space Safari</p>
-    </div>
+    {% include youtubeVideo.html id="TmrsH1F3M68" title="Unboxing & Building LEGO in Zero Gravity!" tag="tv" %}
+    {% include youtubeVideo.html id="Ok0O9YzHPDo" title="Mike Massimino, a citizen of Earth" tag="tv" %}
+    {% include youtubeVideo.html id="Kc7Upg8PFxw" title="360° VR Space Safari" tag="tv" %}
 </div>
-
 
 <header>
     <h2>NASA</h2>
 </header>
 
 <div class="media-video">
-    <div>
-        <a href="//www.youtube.com/embed/mwTNPMpCCMM" data-fancybox="nasa" data-caption="Mike's Spacewalk">
-            <img src="http://i1.ytimg.com/vi/mwTNPMpCCMM/mqdefault.jpg" alt="Mike's Spacewalk" />
-        </a>
-        <p>Mike's Spacewalk</p>
-    </div>
-    <div>
-        <a href="//www.youtube.com/embed/akw6XBjD5ho" data-fancybox="personal" data-caption="ISS Science Garage">
-            <img src="http://i1.ytimg.com/vi/akw6XBjD5ho/mqdefault.jpg" alt="ISS Science Garage" />
-        </a>
-        <p>ISS Science Garage</p>
-    </div>
-    <div>
-        <a href="//www.youtube.com/embed/rxOZUBDBo3I" data-fancybox="personal" data-caption="Gravity Congratulations">
-            <img src="http://i1.ytimg.com/vi/rxOZUBDBo3I/mqdefault.jpg" alt="Gravity Congratulations" />
-        </a>
-        <p>Gravity Congratulations</p>
-    </div>
+    {% include youtubeVideo.html id="mwTNPMpCCMM" title="Mike's Spacewalk" tag="tv" %}
+    {% include youtubeVideo.html id="akw6XBjD5ho" title="ISS Science Garage" tag="tv" %}
+    {% include youtubeVideo.html id="rxOZUBDBo3I" title="Gravity Congratulations" tag="tv" %}
 </div>
