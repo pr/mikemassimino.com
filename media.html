@@ -27,6 +27,16 @@ pageSpecificJSName: media
 <div class="media-video">
     {% include youtubeVideo.html id="GxKXketbmpw" title="The 11th Hour with Brian Williams" tag="news" %}
     {% include youtubeVideo.html id="XjLh4WgqDUw" title="Erin Burnett Out Front" tag="news" %}
+    {% include newsVideo.html title="Today (SpaceX Launch Appearance)" tag="news" thumbnail_name="today_space_x" source="https://www.today.com/today/embedded-video/mmvo83961413895" %}
+    <!--For some reason CNN isn't working :(-->
+    <!--{% include newsVideo.html title="CNN" tag="news" thumbnail_name="cnn" source="http://fave.api.cnn.io/v1/fav/?video=tv/2020/05/30/spacex-nasa-launch-aims-to-make-history.cnn&customer=cnn&edition=domestic&env=prod" %}-->
+    <!--I guess we're doing it live-->
+    <div>
+        <a href="https://www.cnn.com/videos/tv/2020/05/30/spacex-nasa-launch-aims-to-make-history.cnn" target="_blank">
+            <img src="./assets/images/media_thumbnails/cnn.jpg" alt="CNN" />
+        </a>
+        <p>CNN</p>
+    </div>
     {% include newsVideo.html title="Good Morning America" tag="news" thumbnail_name="good_morning_america" source="https://abcnews.go.com/video/embed?id=46979317" %}
     {% include newsVideo.html title="Today (Astroid Appearance)" tag="news" thumbnail_name="today_astroid_appearance" source="https://www.today.com/offsite/ex-astronaut-rock-whizzing-past-earth-came-from-outside-our-solar-system-1117394499522" %}
     {% include newsVideo.html title="Fox News (Apollo 11 Anniversary)" tag="news" thumbnail_name="fox_news_apollo_11" source="https://video.foxnews.com/v/6061612132001/?#sp=show-clips" %}
