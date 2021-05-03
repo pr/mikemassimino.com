@@ -4,7 +4,7 @@
         <div style="margin-bottom: 2em;">
             <h3>
                 {% for item in site.data.nav %}
-                    <a style="text-decoration: none;"  href="{{ item.link }}" {% if page.url == item.link %}style="color: #7bd2ed;"{% endif %}>{{item.name}}</a>
+                    <a href="{{ item.link }}" {% if page.url == item.link %} style="color: #7bd2ed;" {% endif %}>{{item.name}}</a>
                     {% if forloop.last == false %}
                     //
                     {% endif %}
