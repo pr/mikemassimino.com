@@ -74,7 +74,7 @@ pageSpecificJSName: speaker
     <h2>Past Clients</h2>
     <p>
         {% for item in site.data.clientList %}
-            <a style="text-decoration: none;">{{item.name}}{% if forloop.last == false %};{% endif %}</a>
+            <a style="text-decoration: none;">{{item.name}}{% if forloop.last == false %} // {% endif %}</a>
         {% endfor %}
     </p>
 </div>

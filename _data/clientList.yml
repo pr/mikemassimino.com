@@ -1,115 +1,128 @@
-- name: Dell
-- name: Oracle
-- name: Glastonberry Music Festival
-- name: Triple Blitz – Microsoft, Intel, Hewlett Packard
-- name: The LEGO Group
-- name: Northwestern Mutual
-- name: Reliant NRG
-- name: American Museum of Natural History
-- name: Sunovion Pharmaceuticals Inc
-- name: CVS Caremark
-- name: CNBC
-- name: Trader Joe’s
-- name: Cook Medical
-- name: Enservio
-- name: Arm & Hammer
-- name: Ministry of Education - United Arab Emirates
-- name: Maritz CX
-- name: Zurich Insurance
-- name: Genentech
-- name: Pure Insurance
-- name: NAPA Auto Parts
-- name: Dematic
-- name: Gartner, Inc.
-- name: McCann Health
-- name: Allscripts Healthcare Systems
-- name: Dodge Data and Analytics
-- name: WinTrust
-- name: Cohn Reznick
-- name: Pratt & Whitney
-- name: Transylvania City Library Foundation
-- name: Devicor Medical Products
-- name: Southwest Power
-- name: Pool
-- name: National Association of Retired Federal Employees
-- name: Independent Financial Group
-- name: Jabra
-- name: Pharmaceutical Research and Manufacturers of America
-- name: Pfizer
-- name: National Council of Examiners for Engineering and Surveying
-- name: Acumatica
-- name: Clark Planetarium
-- name: MIT
-- name: W.W. Grainger, Inc
-- name: Envision Career & Leadership Programs
-- name: Healthcare Business Media
-- name: Sudler & Hennessey
-- name: Annual STEM Forum & Expo
-- name: National Science Teachers Association
-- name: Anthony’s Coal Fired
-- name: Pizza
-- name: Tony LaRussa Leaders and Legends
-- name: Cook Vascular Programs
-- name: Imprivata
-- name: Social Chain
-- name: American Express
-- name: Riverwood Capital
-- name: Sandler O’Neill and Partners, LP
-- name: United Healthcare
-- name: Stark County Library
-- name: Johnson & Johnson - Janssen Pharmaceuticals
-- name: Mercedes
-- name: Cigna
-- name: Micro Focus
-- name: Total Wine and More
-- name: Ogilvy Health
-- name: Jones, Lang, LaSalle (JLL)
-- name: Jane Street
-- name: Vermont Captive Insurance
-- name: Verizon
-- name: Smith and Associates
-- name: Fidelity Investments
-- name: Zoom
-- name: ASHRAE (American Society of Heating, Refrigerating & Air-Conditioning Engineers)
-- name: SAE
-- name: United Business Bankers
-- name: CPCU Society (Society of Chartered Property Casualty Underwriters)
-- name: PCI Security Standards Council
-- name: Shell Oil
-- name: Raytheon
-- name: Boy Scouts of America
+- name: 3M
 - name: 7 x 24 Exchange
-- name: Blue Ridge Community College
-- name: Exyn Technologies
-- name: Orlando Health
+- name: AETNA Insurance
+- name: ASHRAE (American Society of Heating, Refrigerating & Air-Conditioning Engineers)
 - name: AbbVie Pharmaceuticals
 - name: Acquia Software
-- name: Idaho Associated General Contractors
-- name: RSA Conference 2020 (Cybersecurity)
-- name: Nationwide Marketing Group
-- name: Disney ABC
-- name: Model N Rainmaker 2020
-- name: Personify Inc
-- name: McKesson Healthcare
-- name: Qlik Business Intelligence
-- name: NSTA STEM Forum
-- name: Vaisala
-- name: Nomura Holdings
-- name: AETNA Insurance
-- name: LeanIX EA Connect Days 2020
-- name: Gilead Sciences
-- name: YPO Greenwich
-- name: Florida Chamber Commerce
-- name: National Council for Air & Stream
-- name: DuPont
-- name: Terumo Aortic
-- name: American Council of Life Insurers
-- name: GitHub
-- name: 3M
-- name: Capital One
-- name: Virtusa
+- name: Acumatica
 - name: Airfoil (Motus Integrated Technologies)
+- name: Allscripts Healthcare Systems
+- name: American Council of Life Insurers
+- name: American Express
+- name: American Museum of Natural History
+- name: Annual STEM Forum & Expo
+- name: Anthony’s Coal Fired
+- name: Arm & Hammer
 - name: Arçelik Home Appliances
+- name: Atlassian
+- name: Axalta
+- name: Blue Ridge Community College
+- name: Boy Scouts of America
+- name: CNBC
+- name: CPCU Society (Society of Chartered Property Casualty Underwriters)
+- name: CVS Caremark
+- name: Capital One
+- name: Carrier
+- name: Ceridian
+- name: Cigna
+- name: Citibank
+- name: Clark Planetarium
+- name: Cohn Reznick
+- name: Cook Medical
+- name: Cook Vascular Programs
+- name: Cority Software Inc.
+- name: Dell
+- name: Dematic
+- name: Devicor Medical Products
+- name: Disney ABC
+- name: Dodge Data and Analytics
+- name: DuPont
+- name: Enservio
+- name: Envision Career & Leadership Programs
+- name: Exyn Technologies
+- name: F. Hoffmann-La Roche Ltd.
+- name: Fidelity Investments
+- name: Florida Chamber Commerce
+- name: Forever Living Products
+- name: Gartner Enterprise IT
+- name: Gartner, Inc.
+- name: Genentech
+- name: Gilead Sciences
+- name: GitHub
+- name: Glastonberry Music Festival
+- name: HP
+- name: Healthcare Business Media
+- name: Idaho Associated General Contractors
+- name: Imprivata
+- name: Independent Financial Group
+- name: Infor(US)
 - name: JP Morgan Chase
+- name: Jabra
+- name: Jane Street
+- name: Johnson & Johnson - Janssen Pharmaceuticals
+- name: Jones, Lang, LaSalle (JLL)
 - name: Labster
+- name: LeanIX EA Connect Days 2020
+- name: MIT
+- name: Maritz CX
+- name: McCann Health
+- name: McKesson Healthcare
+- name: Mercedes
+- name: Merck & Co. Pharmaceuticals
+- name: Micro Focus
+- name: Ministry of Education - United Arab Emirates
+- name: Model N Rainmaker 2020
+- name: NAPA Auto Parts
+- name: NSTA STEM Forum
+- name: National Association of Retired Federal Employees
+- name: National Council for Air & Stream
+- name: National Council of Examiners for Engineering and Surveying
+- name: National Science Teachers Association
+- name: Nationwide Marketing Group
+- name: Nomura Holdings
+- name: Northwestern Mutual
+- name: Ogilvy Health
+- name: Oracle
+- name: Orlando Health
+- name: PCI Security Standards Council
+- name: Personify Inc
+- name: Pfizer
+- name: Pharmaceutical Research and Manufacturers of America
+- name: Pizza
+- name: Pool
+- name: Pratt & Whitney
+- name: Pure Insurance
+- name: Qlik Business Intelligence
+- name: RSA Conference 2020 (Cybersecurity)
+- name: Raytheon
+- name: Reliant NRG
+- name: Riverwood Capital
+- name: SAE
+- name: Sandler O’Neill and Partners, LP
+- name: Shell Oil
+- name: Smith and Associates
+- name: Social Chain
+- name: Southwest Power
+- name: Stark County Library
+- name: Sudler & Hennessey
+- name: Sunovion Pharmaceuticals Inc
 - name: TOMIA Global
+- name: Terumo Aortic
+- name: The LEGO Group
+- name: Tony LaRussa Leaders and Legends
+- name: Total Wine and More
+- name: Trader Joe’s
+- name: Transylvania City Library Foundation
+- name: Triple Blitz – Microsoft, Intel, Hewlett Packard
+- name: United Business Bankers
+- name: United Healthcare
+- name: Urovant Sciences
+- name: Vaisala
+- name: Verizon
+- name: Vermont Captive Insurance
+- name: Virtusa
+- name: W.W. Grainger, Inc
+- name: WinTrust
+- name: YPO Greenwich
+- name: Zoom
+- name: Zurich Insurance
