@@ -1,0 +1,20 @@
+---
+
+layout: majorHeader
+permalink: /in-space
+title: In Space
+
+---
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+<h2>A selection of pictures of Mike in space</h2>
+
+<div class="media-video">
+    {% for item in site.data.inSpaceImages %}
+        <a data-fancybox="gallery" href="/assets/images/in_space/{{ item.imageName }}"><img src="/assets/images/in_space_thumbnails/{{ item.imageName }}" alt="Space Image"></a>
+    {% endfor %}
+</div>
