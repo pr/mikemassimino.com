@@ -1,0 +1,63 @@
+---
+
+layout: majorHeader
+permalink: /moonshot
+title: Moonshot
+pageSpecificJSName: moonshot
+pageSpecificCSSName: moonshot
+
+---
+
+
+<div class="container">
+	<div class="flex-item">
+
+		<img style="max-width: 100%" src="/assets/images/moonshot_cover.webp" alt="Moonshot Cover">
+
+	</div>
+	<div class="flex-item" style="padding: 30px">
+
+		<p><b>Mike's second book is coming out soon! Learn the NASA Astronaut mindset to solve problems, provide leadership in the face of adversity, and never give up when pursuing your wildest ambitions.</b></p>
+
+		<p>Mike Massimino achieved his dream of exploring space. Now he distills stories and insights from NASA into an actionable guide to accomplish your biggest goals. Mike reveals how to make possible the seemingly impossible—on Earth. Written with characteristic wit and a big heart, Mike identifies ten hard-earned lessons of spaceflight and his other life experiences, including:</p>
+		<ul>
+			<li><b>One in a Million Is Not Zero</b>: The odds are against you. Do it anyway.</li>
+			<li><b>The Thirty-Second Rule</b>: You’re going to make mistakes. Learn how to deal with them.</li>
+			<li><b>Be Amazed</b>: The universe is an incredible place. Stop what you’re doing and look around.</li>
+			<li><b>Know When to Pivot</b>: Change is inevitable. Accept and embrace it.</li>
+		</ul>
+
+		<p>We all have our own personal “moon shots” we’d like to take in life, but as mission control will tell you, doing one big thing really means getting a thousand little things right along the way. Moonshot is the book that will show you how to do just that, and help set you on the right path to achieve your own personal and professional dreams.</p>
+
+		<p><b>Excited for <i>Moonshot</i> to come out? While you wait, check out Mike's other bestselling book, <i>Spaceman</i>, <a href="/spaceman">here</a>!</b></p>
+
+		<button class="accordion">Order</button>
+		<div class="panel">
+			<p>
+				<a href="http://www.amazon.com/gp/product/030683264X" target="_blank">Amazon</a>
+				<br/>
+				<a href="https://www.barnesandnoble.com/w/moonshot-mike-massimino/1143299799" target="_blank">Barnes & Noble</a>
+				<br/>
+				<a href="https://www.booksamillion.com/p/9780306832642" target="_blank">Books-A-Million</a>
+				<br/>
+				<a href="https://bookshop.org/p/books/moonshot-a-nasa-astronaut-s-guide-to-achieving-the-impossible-mike-massimino/19968908" target="_blank">Bookshop</a>
+				<br/>
+				<a href="https://www.target.com/p/moonshot-by-mike-massimino-hardcover/-/A-88969213" target="_blank">Target</a>
+				<br/>
+				<a href="https://www.walmart.com/ip/Moonshot-A-NASA-Astronaut-s-Guide-to-Achieving-the-Impossible-Hardcover-9780306832642/1906665451" target="_blank">Walmart</a>
+			</p>
+		</div>
+	</div>
+</div>
+
+<hr/>
+<h3>Reviews</h3>
+
+<div class="moonshot-reviews" style="background-color: #eee">
+	{% for item in site.data.moonshotTestimonials %}
+	<div>
+	<p style="padding: 30px">{{item.quote}}<br/>
+	<b>- {{item.author}}</b></p>
+	</div>
+	{% endfor %}
+</div>
