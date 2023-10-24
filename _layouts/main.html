@@ -28,6 +28,10 @@
 
 <body class="is-preload">
 
+    {% if page.showOverlay %}
+        {% include moonshotOverlay.html %}
+    {% endif %}
+
     <div id="page-wrapper">
 
         {% include header.html %}
