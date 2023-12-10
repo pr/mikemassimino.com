@@ -1,1 +1,1 @@
-bundle exec jekyll build --profile
+bundle exec jekyll serve --profile

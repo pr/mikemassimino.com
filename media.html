@@ -25,38 +25,15 @@ pageSpecificJSName: media
     {% include youtubeVideo.html id="bwIuoIQGX48" title="GMA3 Extended Book Talk" tag="news" %}
     {% include youtubeVideo.html id="GxKXketbmpw" title="The 11th Hour with Brian Williams" tag="news" %}
     {% include youtubeVideo.html id="XjLh4WgqDUw" title="Erin Burnett Out Front" tag="news" %}
-    {% include newsVideo.html title="Today (SpaceX Launch Appearance)" tag="news" thumbnail_name="today_space_x" source="https://www.today.com/today/embedded-video/mmvo83961413895" %}
-    <!--For some reason CNN isn't working :(-->
-    <!--{% include newsVideo.html title="CNN" tag="news" thumbnail_name="cnn" source="http://fave.api.cnn.io/v1/fav/?video=tv/2020/05/30/spacex-nasa-launch-aims-to-make-history.cnn&customer=cnn&edition=domestic&env=prod" %}-->
-    <!--I guess we're doing it live-->
-    <div>
-        <a href="https://www.cnn.com/videos/tv/2020/05/30/spacex-nasa-launch-aims-to-make-history.cnn" target="_blank">
-            <img src="./assets/images/media_thumbnails/cnn.jpg" alt="CNN" />
-        </a>
-        <p>CNN</p>
-    </div>
-    {% include newsVideo.html title="Good Morning America (Whitson Insight)" tag="news" thumbnail_name="good_morning_america" source="https://abcnews.go.com/video/embed?id=46979317" %}
-    {% include newsVideo.html title="Today (Astroid Appearance)" tag="news" thumbnail_name="today_astroid_appearance" source="https://www.today.com/embedded-video/mmvo1117394499522" %}
-    <div>
-        <a href="https://video.foxnews.com/v/6061612132001/?#sp=show-clips" target="_blank">
-            <img src="./assets/images/media_thumbnails/fox_news_apollo_11.jpg" alt="fox_news_apollo_11" />
-        </a>
-        <p>Fox News (Apollo 11 Anniversary)</p>
-    </div>
-    {% include newsVideo.html title="Today (Eclipse Appearance)" tag="news" thumbnail_name="today_eclipse_appearance" source="https://www.today.com/embedded-video/mmvo1024919107989" %}
-    <div>
-        <a href="https://video.foxnews.com/v/5979613341001/?#sp=show-clips" target="_blank">
-            <img src="./assets/images/media_thumbnails/fox_news_virgin.jpg" alt="fox_news_virgin" />
-        </a>
-        <p>Fox News (Virgin Galactic Spaceship)</p>
-    </div>
-    {% include newsVideo.html title="ABC News" tag="news" thumbnail_name="abc_news" source="https://abcnews.go.com/video/embed?id=20478576" %}
-    <div>
-        <a href="https://cheddar.com/media/spacing-out-with-mike-massimino/" target="_blank">
-            <img src="./assets/images/media_thumbnails/cheddar.jpg" alt="cheddar" />
-        </a>
-        <p>Cheddar</p>
-    </div>
+    {% include youtubeVideo.html id="AC1T6Gm6CCQ" title="Today (SpaceX Launch Appearance)" tag="news" %}
+    {% include externalVideo.html title="CNN" thumbnail_name="cnn" link="https://www.cnn.com/videos/tv/2020/05/30/spacex-nasa-launch-aims-to-make-history.cnn" %}
+    {% include externalVideo.html title="Good Morning America (Whitson)" thumbnail_name="good_morning_america" link="https://abcnews.go.com/GMA/video/us-astronaut-blasts-history-books-46979317" %}
+    {% include youtubeVideo.html id="zzYOUVbbWdw" title="Today (Astroid Appearance)" tag="news" %}
+    {% include externalVideo.html title="Fox News (Apollo 11 Anniversary)" thumbnail_name="fox_news_apollo_11" link="https://video.foxnews.com/v/6061612132001/" %}
+    {% include externalVideo.html title="Today (Eclipse Appearance)" thumbnail_name="today_eclipse_appearance" link="https://www.today.com/video/solar-eclipse-ex-astronaut-explains-how-to-prepare-how-to-watch-1024919107989" %}
+    {% include externalVideo.html title="Fox News (Virgin Galactic Spaceship)" thumbnail_name="fox_news_virgin" link="https://video.foxnews.com/v/5979613341001/" %}
+    {% include youtubeVideo.html id="Rq9RdhuLWao" title="ABC News" tag="news" %}
+    {% include externalVideo.html title="Cheddar News" thumbnail_name="cheddar" link="https://cheddar.com/media/spacing-out-with-mike-massimino/" %}
 </div>
 
 <header>
@@ -64,7 +41,7 @@ pageSpecificJSName: media
 </header>
 
 <div class="media-video">
-    {% include newsVideo.html title="Netflix: Worn Stories" tag="tv" thumbnail_name="netflix_worn_stories" source="https://player.vimeo.com/video/648871234?h=ce8858b01e" %}
+    {% include externalVideo.html title="Netflix: Worn Stories" thumbnail_name="netflix_worn_stories" link="https://player.vimeo.com/video/648871234?h=ce8858b01e" %}
     {% include youtubeVideo.html id="ZWMl9BwBQ2g" title="Late Show with David Letterman" tag="tv" %}
     {% include youtubeVideo.html id="gMZNx7bxZes" title="Big Bang Theory Clip" tag="tv" %}
     {% include youtubeVideo.html id="QoR3Un2Ws24" title="Additional Big Bang Theory Clip" tag="tv" %}
